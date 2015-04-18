@@ -1,0 +1,11 @@
+Library/
+Temp/
+*~
+.DS_Store
+*.userprefs
+*.sln
+~$*
+*.vsproj
+*.csproj
+*.unityproj
+mytemp/
