@@ -6,6 +6,7 @@ public class PlayerUnit : MonoBehaviour {
 	CharacterController ctrl;
 	public Vector3 moveDir;
 	public Vector3 faceDir;
+	private float mouseMoveFactor = 1f;
 
 	void Awake() {
 		ctrl = GetComponent<CharacterController> ();
@@ -27,5 +28,9 @@ public class PlayerUnit : MonoBehaviour {
 			moveDir.Normalize ();
 		Vector3 targetV = moveDir * 3f;
 		ctrl.SimpleMove (targetV);
+
+		float mx = Input.GetAxis ("Mouse X");
+		float my = Input.GetAxis ("Mouse Y");
+
 	}
 }
