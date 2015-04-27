@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using LinearAlgebra.Matricies;
 
 public class PlayerCamera : MonoBehaviour {
 
@@ -28,4 +29,5 @@ public class PlayerCamera : MonoBehaviour {
 		transform.forward = player.faceDir;
 		transform.Rotate (30, 0, 0);
 	}
+
 }
